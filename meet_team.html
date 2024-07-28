@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <link rel="stylesheet" href="css/meet_team.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="meet_team.html">Meet the Team</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-button">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+    </header>
+    
+    <section class="team">
+        <div class="container">
+            <h2 class="section-heading">Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/member1.png" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                    <p>John is the visionary behind our company, leading the team with passion and dedication.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member3.png" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+                    <p>Jane is responsible for overseeing all technical aspects of the company.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member2.png" alt="Team Member 3">
+                    <h3>Sam Brown</h3>
+                    <p>COO</p>
+                    <p>Sam ensures smooth operation and execution of company projects.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member4.png" alt="Team Member 4">
+                    <h3>Emily Johnson</h3>
+                    <p>Marketing Manager</p>
+                    <p>Emily leads our marketing team with innovative strategies and creative campaigns.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member6.png" alt="Team Member 5">
+                    <h3>Michael Lee</h3>
+                    <p>Product Manager</p>
+                    <p>Michael oversees product development and ensures our products meet customer needs.</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member5.png" alt="Team Member 6">
+                    <h3>Sarah Wilson</h3>
+                    <p>Customer Support Lead</p>
+                    <p>Sarah leads our customer support team, ensuring our customers receive top-notch service.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h2 class="section-heading">Latest News</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="images/news1.jpg" alt="News 1">
+                    <h3>Launch of New Feature</h3>
+                    <p>We are excited to announce the launch of our new feature that will enhance user experience.</p>
+                    <a href="news1.html" class="btn-primary">Read More</a>
+                </div>
+                <div class="news-item">
+                    <img src="images/news2.jpg" alt="News 2">
+                    <h3>Partnership Announcement</h3>
+                    <p>We have partnered with XYZ company to bring you more value and innovation.</p>
+                    <a href="news2.html" class="btn-primary">Read More</a>
+                </div>
+                <div class="news-item">
+                    <img src="images/news3.jpg" alt="News 3">
+                    <h3>Upcoming Webinar</h3>
+                    <p>Join us for an insightful webinar on the latest trends in the industry.</p>
+                    <a href="news3.html" class="btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-black">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Growth. All rights reserved.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Hamburger Menu Toggle
+        const hamburgerButton = document.querySelector('.hamburger-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        hamburgerButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

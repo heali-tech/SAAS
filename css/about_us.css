@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.about-us {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-xxl {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-lg {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.text-xl {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-us-section {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Cursor style */
+}
+
+/* Glow effect on hover */
+.about-us-section:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8); /* Blue glow */
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Glow cursor */
+body {
+    cursor: url('https://example.com/glow-cursor.png'), auto; /* Replace with your glow cursor URL */
+}
+
+.about-us-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #007bff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glowing text effect */
+.about-us-section h3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(45deg, rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.6));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    transform: translate(-50%, -50%) rotate(30deg);
+    z-index: -1;
+}
+
+.about-us-section h3:hover::before {
+    opacity: 1;
+}
+
+/* Animation for smooth appearance */
+.about-us-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

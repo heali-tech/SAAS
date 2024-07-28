@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <!-- Include your navigation bar here -->
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact Us</h1>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <h2>Get in Touch</h2>
+                        <form action="submit_form.php" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Our Location</h2>
+                        <p>1234 Kenya, Nairobi, 12345</p>
+                        <p>Email: growthservices.com</p>
+                        <p>Phone: (+254) 7679-00000</p>
+                        <div class="map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9167084301002!2d36.87663897478895!3d-1.218089135555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15f826d2697b%3A0x283746033cb1b5a5!2sUnited%20States%20International%20University%20Africa!5e0!3m2!1sen!2ske!4v1721940963929!5m2!1sen!2ske"
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer here -->
+    </footer>
+</body>
+</html>
