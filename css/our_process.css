@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .main-menu ul li {
+    margin-left: 30px;
+}
+
+.navbar .main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .main-menu ul li a:hover {
+    color: #bb86fc;
+}
+
+.navbar .btn-dark {
+    background-color: #555;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .btn-dark:hover {
+    background-color: #777;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f0f0f0;
+    padding: 4em 0;
+    text-align: center;
+    border-bottom: 3px solid #333;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero .text-xxl {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.hero .text-md {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Process Section */
+.process {
+    padding: 4em 0;
+    background-color: #fff;
+}
+
+.process .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.process .process-step {
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eee;
+}
+
+.process .process-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.process .process-step h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.process .process-step h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 4px;
+    background-color: #bb86fc;
+    border-radius: 2px;
+}
+
+.process .process-step p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 1em;
+}
+
+/* Footer */
+.footer {
+    padding: 3em 0;
+    color: #fff;
+    background-color: #333;
+    border-top: 3px solid #bb86fc;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.footer h4 {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    border-bottom: 2px solid #bb86fc;
+    padding-bottom: 0.5em;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #bb86fc;
+}
+
+.footer .card {
+    background-color: #444;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.footer .card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .card input[type="email"] {
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.footer .card button {
+    background-color: #bb86fc;
+    border: none;
+    padding: 0.7em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.footer .card button:hover {
+    background-color: #9f65f7;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .main-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .main-menu ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+}
