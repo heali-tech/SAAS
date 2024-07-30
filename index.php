@@ -43,11 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Handle registration
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+        $password = $_POST['password'];
         $confirm_password = $_POST['confirm_password'];
 
         // Check if passwords match
-        if ($password !== password_hash($confirm_password, PASSWORD_BCRYPT)) {
+        if ($password !== $confirm_password) {
             $register_error = 'Passwords do not match';
         } else {
             // Check if email already exists
@@ -58,9 +58,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($emailExists > 0) {
                 $register_error = 'Email address already exists.';
             } else {
+                // Hash the password
+                $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+
                 // Insert new user
                 $stmt = $pdo->prepare('INSERT INTO mygrowth (name, email, password) VALUES (?, ?, ?)');
-                if ($stmt->execute([$name, $email, $password])) {
+                if ($stmt->execute([$name, $email, $hashed_password])) {
                     header('Location: welcome.php');
                     exit;
                 } else {
@@ -151,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="checkbox-text">
                         <div class="checkbox-content">
                             <input type="checkbox" id="termCon" aria-label="Terms and Conditions">
-                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                            <label for="termCon" class="text">I accept all terms and conditions</label>
                         </div>
                     </div>
 

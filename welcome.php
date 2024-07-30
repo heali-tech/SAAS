@@ -57,6 +57,8 @@ $user = $stmt->fetch();
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about_us.html">About us</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li><a href="our_process.html">Our process</a></li>
+                    <li><a href="meet_team.html">Join our team</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a class="btn btn-dark" href="logout.php"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
                 </ul>
@@ -82,8 +84,8 @@ $user = $stmt->fetch();
                 <h2 class="text-xxl">Welcome, <?php echo htmlspecialchars($user['name']); ?>!</h2>
                 <p>Your email: <?php echo htmlspecialchars($user['email']); ?></p>
                 <div class="welcome-buttons">
-                    <a href="profile.php" class="btn btn-primary">Profile</a>
-                    <a href="settings.php" class="btn">Settings</a>
+                    <a href="#" class="btn btn-primary">Profile</a>
+                    <a href="#" class="btn">Settings</a>
                     <a href="dashboard.php" class="btn">Dashboard</a>
                 </div>
             </div>
@@ -112,7 +114,7 @@ $user = $stmt->fetch();
                     <h4>Company</h4>
                     <ul>
                         <li><a href="about_us.html">About Us</a></li>
-                        <li><a href="#">Our Process</a></li>
+                        <li><a href="our_process">Our Process</a></li>
                         <li><a href="meet_team.html">Join Our Team</a></li>
                     </ul>
                 </div>
